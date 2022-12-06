@@ -1,0 +1,50 @@
+
+@media (max-width: 500px) {
+    body {
+        font-size:0em;
+    }
+}
+.businessHeadline {
+
+}
+h1 {
+    color: gold;
+    text-decoration-style: solid;
+    font-size: 300px;
+    font-family: 'Tangerine', serif;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+    padding: 150px 0px 0px 0px;
+}
+h2 {
+    font-size: 150px;
+    font-family: 'Tangerine', serif;
+    text-align: center;
+    padding: 0px 0px 150px 0px;
+    
+}
+nav {
+    background-image:  url(https://imgur.com/2s0svTr);
+    background-size: cover;
+    list-style-type: none;
+    font-family: 'Tangerine', serif;
+    font-size: 100px;
+    background-color: rgba(7, 0, 0, 0.25);
+}
+ul {
+    padding: 30px;
+    list-style-type: none;
+    text-align: center;
+}
+li {
+   
+    display: inline;
+    padding: 0px 250px 0px 250px;
+}
+.about {
+    font-size: 30px;
+    font-family: bold impact;
+}
+a {
+    color: gold;
+}
