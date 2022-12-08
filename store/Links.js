@@ -1,4 +1,4 @@
 export default [
-    { title: "Home", text: "Home" },
-    { title: "Contact", text: "Contact" }
-  ];
+  { title: "Home", text: "Home" },
+  { title: "Contact", text: "Contact" }
+];

@@ -5,23 +5,32 @@
     }
 }
 .businessHeadline {
+    margin-top: 0px;
+    background-image: url(https://i.imgur.com/2s0svTrh.jpg?2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    -webkit-margin-top-collapse: collapse;
 
-}
+    }
+
 h1 {
+    margin-bottom: 0px;
     color: gold;
     text-decoration-style: solid;
     font-size: 300px;
     font-family: 'Tangerine', serif;
     text-align: center;
     text-shadow: 5px 5px 5px black;
-    padding: 150px 0px 0px 0px;
+    padding-top: 0px;
 }
 h2 {
+    margin-bottom: 0px;
     font-size: 150px;
     font-family: 'Tangerine', serif;
-    text-align: center;
-    padding: 0px 0px 150px 0px;
-    
+    text-align;
+    padding-top: 0px;
+
 }
 nav {
     background-image:  url(https://imgur.com/2s0svTr);
@@ -37,7 +46,7 @@ ul {
     text-align: center;
 }
 li {
-   
+
     display: inline;
     padding: 0px 250px 0px 250px;
 }

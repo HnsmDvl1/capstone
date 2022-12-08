@@ -6,18 +6,18 @@ export default () => html`
         <div></div>
             <label for="name">Name:</label>
         <input type="text" name="name" id="name" placeholder="Full Name" required /><br />
-      
+
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" placeholder="you@somewhere.com" /><br />
-      
+
         <label for="fone">Phone:</label>
         <input type="tel" name="fone" id="fone" placeholder="555-555-5555" /><br />
-      
+
         <div>
           <label for="msg">Enter your message:</label>
           <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
         </div>
-      
+
         <div>
           <p>What's this message about?</p>
           <div>
@@ -39,10 +39,10 @@ export default () => html`
             <label>Don't know/something else</label>
           </div>
         </div>
-      
+
         <input type="checkbox" name="optIn" value="trusting" id="news" checked />
         <label for="news">Subscribe me to your newsletter!</label>
-      
+
         <div>
           <label for="marketing">How did you hear about me?</label>
           <select name="marketing" id="marketing">
@@ -60,7 +60,7 @@ export default () => html`
             <option value="other">Other</option>
           </select>
         </div>
-      
+
         <input type="submit" value="Submit" />
       </form>
     </header>
