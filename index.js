@@ -12,22 +12,20 @@ function render(state = store.Home) {
   ${Main(state)}
   ${Footer()}
   `;
-router.updatePageLinks();
+  router.updatePageLinks();
 }
-
-render(state = store.home);
 
 // add menu toggle to bars icon in nav bar
 // document.querySelector(".fa-bars").addEventListener("click", () => {
-  // document.querySelector("nav > ul").classList.toggle("hidden--mobile");
+// document.querySelector("nav > ul").classList.toggle("hidden--mobile");
 // });
 
 router
   .on({
     "/": () => render(),
-    ":view": (params) => {
+    ":view": params => {
       let view = capitalize(params.data.view);
       render(store[view]);
-    },
+    }
   })
   .resolve();
