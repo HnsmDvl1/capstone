@@ -1,36 +1,35 @@
 import html from "html-literal";
 
 export default () => html`
-<header class="contact">
-        <form action="https://formspree.io/f/mqkjrzkp" method="POST">
-        <div></div>
-            <label for="name">Name:</label>
+  <header class="contact">
+    <form action="https://formspree.io/f/mqkjrzkp" method="POST">
+      <div>
+        <label for="name">Name:</label>
         <input type="text" name="name" id="name" placeholder="Full Name" required /><br />
-
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" placeholder="you@somewhere.com" /><br />
 
         <label for="fone">Phone:</label>
         <input type="tel" name="fone" id="fone" placeholder="555-555-5555" /><br />
+      </div>
+      <div>
+        <label for="msg">Enter your message:</label>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+      </div>
 
+      <div>
+        <p>What's this message about?</p>
         <div>
-          <label for="msg">Enter your message:</label>
-          <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+          <input
+            type="radio"
+            name="subject"
+            value="professional"
+            id="pro"
+            checked
+          />
+          <label for="pro">I'd like to hire you!</label>
         </div>
-
-        <div>
-          <p>What's this message about?</p>
-          <div>
-            <input
-              type="radio"
-              name="subject"
-              value="professional"
-              id="pro"
-              checked
-            />
-            <label for="pro">I'd like to hire you!</label>
-          </div>
-          <div>
+          div>
             <input type="radio" name="subject" value="personal" id="personal" />
             <label for="personal">Personal message</label>
           </div>
