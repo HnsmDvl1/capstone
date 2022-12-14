@@ -2,7 +2,7 @@ import html from "html-literal";
 
 export default () => html`
   <header class="contact">
-    <form action="https://formspree.io/f/mqkjrzkp" method="POST">
+    <!-- <form action="https://formspree.io/f/mqkjrzkp" method="POST">
       <div>
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" placeholder="Full Name" required /><br />
@@ -61,6 +61,8 @@ export default () => html`
         </div>
 
         <input type="submit" value="Submit" />
-      </form>
-    </header>
-    `;
+      </form> -->
+
+  </header>
+  <!-- <script src="https://app.cartes.io/maps/048eebe4-8dac-46e2-a947-50b6b8062fec?lat=38.77419585605159&lng=-90.5023241043091&zoom=14"></script> -->
+`;

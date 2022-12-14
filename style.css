@@ -1,9 +1,58 @@
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px){
     body {
         font-size:0em;
     }
+    .hidden--mobile {
+        display: none !important;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav > i {
+        padding: 1rem;
+        font-size: 2em;
+    }
+
+    nav > ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 0;
+    }
+
+    nav > ul > li {
+        padding: 0.5rem;
+        list-style-type: none;
+    }
+} */
+
+#jumbotron {
+    background: url(assets/GJvector.jpg) center center no-repeat;  background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
+
+#jumbotron > h2 {
+    color: white;
+    text-align: center;
+}
+
+#jumbotron > a {
+    text-decoration: none;
+    background-color: white;
+    font-size: 1.5em;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
 .businessHeadline {
     margin-top: 0px;
     background-image: url(https://i.imgur.com/2s0svTrh.jpg?2);
@@ -32,29 +81,34 @@ h2 {
     padding-top: 0px;
 
 }
-nav {
-    background-image:  url(https://imgur.com/2s0svTr);
-    background-size: cover;
-    list-style-type: none;
-    font-family: 'Tangerine', serif;
-    font-size: 100px;
-    background-color: rgba(7, 0, 0, 0.25);
-}
-ul {
+.footer {
     padding: 30px;
     list-style-type: none;
     text-align: center;
+    color: black;
+    font-size: 50px;
 }
-li {
+.navBar {
+    text-align: right;
+    font-size: 50px;
+    font-family: ;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    margin: 0px 10px 0px 10px;
+}
+.bar {
+    display: inline
 
-    display: inline;
-    padding: 0px 250px 0px 250px;
+}
+a {
+    color: black;
 }
 .about {
     font-size: 30px;
     font-family: bold impact;
 }
-.footer {
-    color: black;
-    font-size: 50px;
+.api {
+    justify-content: flex-end;
 }
+

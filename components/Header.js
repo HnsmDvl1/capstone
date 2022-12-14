@@ -1,7 +1,8 @@
 import html from "html-literal";
-import myImage from "/assets/goldenJewelryBkgrd.jpg";
+import myImage from "/assets/GJvector.jpg";
+
 export default state => html`
-<header>
+  <header>
     <div class="businessHeadline">
       <!-- <img class=titleBackround
           src="${myImage}"
@@ -10,4 +11,4 @@ export default state => html`
       <h2>by Debora Sue</h2>
     </div>
   </header>
-  `;
+`;
