@@ -1,11 +1,13 @@
 import html from "html-literal";
 
-export default () => html`
-  <header class="about">
-    Hidden Treasures is a handmade jewelry company that provides unique pieces
-    that are truly one of a kind. Items presented are the exact item being sold.
-    Zero items can be duplicated to be exactly the same. Upon request multiples
-    of the same item may be handcrafted that would be similar to one another but
-    none would be exactly the same.
-  </header>
+export default state => html`
+  <!-- <section id="jumbotron">
+    <h2>SavvyCoders JavaScript Fullstack Bootcamp</h2>
+    <a href="index.html">"Call to Action" "Button"</a>
+  </section> -->
+  <h3>
+    The weather in ${state.weather.city} is ${state.weather.description}.
+    Temperature is ${state.weather.temp}F, and it feels like
+    ${state.weather.feelsLike}F.
+  </h3>
 `;
