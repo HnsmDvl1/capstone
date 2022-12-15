@@ -1,4 +1,5 @@
 import html from "html-literal";
+//import myImage from "/assets/WelcomeImage.jpg";
 
 export default state => html`
   <div class="firstbkgrdimage"></div>

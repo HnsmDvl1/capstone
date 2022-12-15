@@ -1,5 +1,5 @@
 import html from "html-literal";
-//import myImage from "/assets/GJvector.jpg";
+//import myImage from "/assets/.jpg";
 
 export default () => html`
   <div class="businessHeadline">

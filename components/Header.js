@@ -1,5 +1,5 @@
 import html from "html-literal";
-// import myImage from "/assets/GJvector.jpg";
+
 
 export default () => html`
   <header>

@@ -32,7 +32,7 @@
 } */
 
 #jumbotron {
-    background: url(assets/GJvector.jpg) center center no-repeat;  background-size: cover;
+    background: url(assets/WelcomeImage.jpg) center center no-repeat;  background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,9 +89,10 @@ h2 {
     margin: 0px 10px 0px 10px;
 }
 .footer {
+    display: inline-flex;
     padding: 30px;
     list-style-type: none;
-    text-align: center;
+    text-align: left;
     color: black;
     font-size: 50px;
 }
