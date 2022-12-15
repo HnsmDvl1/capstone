@@ -40,28 +40,26 @@
     height: 90vh;
 }
 
-#jumbotron > h2 {
+/* #jumbotron > h2 {
     color: white;
-    text-align: center;
+    text-align: center; */
 }
 
 #jumbotron > a {
     text-decoration: none;
-    background-color: white;
+    background-color: gold;
     font-size: 1.5em;
     padding: 1.5rem;
     border-radius: 10px;
 }
 
-.businessHeadline {
-    margin-top: 0px;
-    background-image: url(https://i.imgur.com/2s0svTrh.jpg?2);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: center;
-
-
-    }
+/* .firstbkgrdimage {
+    /* margin-top: 0px; */
+    /* background-image: url(assets/WelcomeImage.jpg); */
+    /* background-repeat: no-repeat; */
+    background-color:rgba(216, 11, 243, 0.975); */
+    /* background-position-y: center; */
+}
 
 h1 {
     margin-bottom: 0px;
@@ -81,13 +79,6 @@ h2 {
     padding-top: 0px;
 
 }
-.footer {
-    padding: 30px;
-    list-style-type: none;
-    text-align: center;
-    color: black;
-    font-size: 50px;
-}
 .navBar {
     text-align: right;
     font-size: 50px;
@@ -96,6 +87,13 @@ h2 {
     background-color: rgba(0, 0, 0, 0.25);
     padding: 40px;
     margin: 0px 10px 0px 10px;
+}
+.footer {
+    padding: 30px;
+    list-style-type: none;
+    text-align: center;
+    color: black;
+    font-size: 50px;
 }
 .bar {
     display: inline
