@@ -1,14 +1,14 @@
 import html from "html-literal";
-import myImage from "/assets/GJvector.jpg";
+// import myImage from "/assets/GJvector.jpg";
 
-export default state => html`
+export default () => html`
   <header>
-    <div class="businessHeadline">
-      <!-- <img class=titleBackround
-          src="${myImage}"
-          alt="Assortment of jewelry arranged around the perimeter"/> -->
-      <h1>HiddenTreasures</h1>
-      <h2>by Debora Sue</h2>
-    </div>
+    <ul class="navBar">
+      <li class="bar"><a href="Home">HOME</a></li>
+      <li class="bar"><a href="#">SHOP</a></li>
+      <li class="bar"><a href="About">ABOUT</a></li>
+      <li class="bar"><a href="Contact">CONTACT</a></li>
+      <li class="bar"><a href="#"> SHOPPING BAG</a></li>
+    </ul>
   </header>
 `;
