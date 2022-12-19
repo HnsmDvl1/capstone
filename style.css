@@ -1,19 +1,161 @@
+/* Home page */
+#jumbotron {
+    background: url(assets/WelcomeImage.jpg) center center no-repeat;  background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
 
-/* @media (max-width: 500px){
-    body {
-        font-size:0em;
-    }
-    .hidden--mobile {
-        display: none !important;
+#jumbotron > h1 {
+    color: goldenrod;
+    font-size: 200px;
+    font-family: Tangerine;
+    text-shadow: black 5px 2px;
+    flex-direction: column;
+    justify-content: left;
+    align-items:flex-end;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#jumbotron > a {
+    background-color: rgba(189, 138, 18, 0.882);
+    font-size: 1.5em;
+    padding: 1.5rem;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-family: Tangerine;
+    text-align: right;
+    font-size: 80px;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-top: 0em;
+    padding-top: 0em;
+
+
+}
+/* ABOUT PAGE */
+#about {
+    background: url(assets/roseBackground.jpg)center center no-repeat;  background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+
+
+/* Nav Page */
+.navBar {
+
+
+}
+
+.navBar > ol {
+    text-shadow: black 4px 2px;
+    font-size: 65px;
+    font-family: Tangerine;
+    color: goldenrod;
+    margin: 0px;
+    font-weight: 900;
+    padding-top: 10px;
+}
+
+nav {
+
+
+
     }
 
-    nav {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+nav > i {
+    padding: ;
+    font-size: ;
+
+}
+
+nav > ul {
+
+    display:;
+    flex-direction:;
+    padding:;
+
+
     }
 
-    nav > i {
+nav > ul > li {
+    font-size: 30px;
+    list-style-type: none;
+    display: inline;
+    padding: 0rem 10rem 0rem 10rem;
+
+
+
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+
+/* .hidden--mobile nav-links {
+    color: black;
+    text-decoration: none;
+    padding-left: 40rem;
+    list-style-type: none;
+} */
+
+/* li {
+    font-size: 30px;
+    display: inline;
+    padding: 0px 10px 0px 10px;
+} */
+
+
+
+/* Contact Page */
+form {
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+}
+
+form > * {
+    margin: 0.5rem;
+}
+
+form > input[type="submit"] {
+    width: 40%;
+    margin: 0.5rem;
+    margin-right: auto;
+}
+
+footer {
+
+}
+
+@media (max-width: 375px){
+
+    /* nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    } */
+
+    /* nav > i {
         padding: 1rem;
         font-size: 2em;
     }
@@ -28,86 +170,12 @@
     nav > ul > li {
         padding: 0.5rem;
         list-style-type: none;
-    }
+    } */
+}
+    /* hamberger is not working */
+
+/* @media (min-width: 376px) {
+    .hidden--mobile {
+        display: none !important;
+        }
 } */
-
-#jumbotron {
-    background: url(assets/WelcomeImage.jpg) center center no-repeat;  background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-}
-
-/* #jumbotron > h2 {
-    color: white;
-    text-align: center; */
-}
-
-#jumbotron > a {
-    text-decoration: none;
-    background-color: gold;
-    font-size: 1.5em;
-    padding: 1.5rem;
-    border-radius: 10px;
-}
-
-/* .firstbkgrdimage {
-    /* margin-top: 0px; */
-    /* background-image: url(assets/WelcomeImage.jpg); */
-    /* background-repeat: no-repeat; */
-    background-color:rgba(216, 11, 243, 0.975); */
-    /* background-position-y: center; */
-}
-
-h1 {
-    margin-bottom: 0px;
-    color: gold;
-    text-decoration-style: solid;
-    font-size: 300px;
-    font-family: 'Tangerine', serif;
-    text-align: center;
-    text-shadow: 5px 5px 5px black;
-    padding-top: 0px;
-}
-h2 {
-    margin-bottom: 0px;
-    font-size: 150px;
-    font-family: 'Tangerine', serif;
-    /* text-align; */
-    padding-top: 0px;
-
-}
-.navBar {
-    text-align: right;
-    font-size: 50px;
-    font-family: ;
-    list-style-type: none;
-    background-color: rgba(0, 0, 0, 0.25);
-    padding: 40px;
-    margin: 0px 10px 0px 10px;
-}
-.footer {
-    display: inline-flex;
-    padding: 30px;
-    list-style-type: none;
-    text-align: left;
-    color: black;
-    font-size: 50px;
-}
-.bar {
-    display: inline
-
-}
-a {
-    color: black;
-}
-.about {
-    font-size: 30px;
-    font-family: bold impact;
-}
-.api {
-    justify-content: flex-end;
-}
-
