@@ -2,7 +2,7 @@
 #jumbotron {
     background: url(assets/WelcomeImage.jpg) center center no-repeat;  background-size: cover;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     height: 90vh;
@@ -44,29 +44,91 @@ h2 {
 }
 /* ABOUT PAGE */
 #about {
-    background: url(assets/roseBackground.jpg)center center no-repeat;  background-size: cover;
-    display: flex;
+    background: url(assets/roseBackground.jpg)center center no-repeat;
+    background-size: cover;
+    display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     height: 90vh;
+    font-family: Tangerine;
+    padding-left: 5em;
+}
+#about > h1 {
+    font-size: 10em;
+    font-weight: 500;
+    text-shadow:  black 1px 2px;
+    color:blanchedalmond;
+    justify-content: center;
+    margin-bottom: 0;
+}
+#about > h2 {
+    font-size: 10em;
+    margin-bottom: 0;
+}
+#about > p {
+    font-size: 5em;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
+/*CONTACT PAGE*/
+#contact {
+    background: url(assets/annie-spratt-gL2lFfTkLo4-unsplash.jpg)center center no-repeat;
+    background-size: cover;
+}
 
+form {
+    border: solid 1px black;
+    display:flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items:center;
+    height: 90vh;
+    font-family: Tangerine;
+}
+form > label {
+    font-size: 10rem;
+    display: flex
+    flex-direction: ;
+    justify-content: space-around;
+    align-items: center;
+}
+form > * {
+    margin: 0.25rem;
+
+}
+
+form > p{
+    font-size: 2rem;
+}
+form > input[type="submit"] {
+    width: 20%;
+    margin: 0 auto;
+}
+
+/* SHOP PAGE */
+#shop {
+    background: url(assets/vinesOnBrick.jpg) center center no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
 
 /* Nav Page */
 .navBar {
 
-
+    font-family: Tangerine;
 }
 
-.navBar > ol {
-    text-shadow: black 4px 2px;
+.navBar > h1 {
+
     font-size: 65px;
-    font-family: Tangerine;
+
+    font-weight: 900;
+    text-shadow: black 4px 2px;
     color: goldenrod;
     margin: 0px;
-    font-weight: 900;
     padding-top: 10px;
 }
 
@@ -84,8 +146,9 @@ nav > i {
 
 nav > ul {
 
-    display:;
-    flex-direction:;
+    display:flex;
+    justify-content: flex-end;
+    align-items:flex-end;
     padding:;
 
 
@@ -126,22 +189,7 @@ nav > ul > li > a {
 
 
 /* Contact Page */
-form {
-    border: solid 1px black;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 1rem;
-}
 
-form > * {
-    margin: 0.5rem;
-}
-
-form > input[type="submit"] {
-    width: 40%;
-    margin: 0.5rem;
-    margin-right: auto;
-}
 
 footer {
 
