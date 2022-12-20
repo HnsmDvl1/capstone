@@ -1,10 +1,8 @@
 import html from "html-literal";
 
 export default links => html`
-  <div class="navBar">
-    <ol>
-      Hidden Treasures
-    </ol>
+  <section id="navBar">
+    <h1>Hidden Treasures</h1>
     <nav>
       <i class="fas fa-bars"></i>
       <ul class="hidden--mobile nav-links">
@@ -16,5 +14,5 @@ export default links => html`
           .join("")}
       </ul>
     </nav>
-  </div>
+  </section>
 `;
