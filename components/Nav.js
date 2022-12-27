@@ -4,7 +4,7 @@ export default links => html`
   <section id="navBar">
     <h1>Hidden Treasures</h1>
     <nav>
-      <i class="fas fa-bars"></i>
+      <!-- <i class="fas fa-bars"></i> -->
       <ul class="hidden--mobile nav-links">
         ${links
           .map(
