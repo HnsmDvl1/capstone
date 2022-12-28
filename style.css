@@ -82,25 +82,49 @@ h2 {
 form {
     border: solid 1px black;
     display:flex;
-    flex-flow: wrap;
+    flex-flow:column;
     justify-content: center;
     align-items:center;
     height: 90vh;
     font-family: Tangerine;
+
+}
+form > h1 {
+    font-size: 5em;
+    margin-top: 0;
+    padding: 0em 0em 1em 0em;
+
+}
+
+.nameEmail {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+.msgBox > textarea {
+    font-size: 2rem;
+    text-align: center;
+
+}
+.questions {
+    font-size: 8em;
+    margin-top: 0;
+    padding-top: 0;
 }
 form > label {
-    font-size: 10rem;
-    display: flex
-    flex-direction: ;
-    justify-content: space-around;
-    align-items: center;
+    font-size: 5rem;
+
 }
+
 form > * {
     margin: 0.25rem;
 
 }
 
-form > p{
+form > p {
     font-size: 2rem;
 }
 form > input[type="submit"] {
@@ -110,7 +134,9 @@ form > input[type="submit"] {
 
 /* SHOP PAGE */
 #shop {
+    /* background: url(assets/GJvector.jpg) */
     background: url(assets/vinesOnBrick.jpg) center center no-repeat;
+
     background-size: cover;
     height: 90vh;
 }
@@ -124,24 +150,11 @@ form > input[type="submit"] {
 .navBar > h1 {
 
     font-size: 65px;
-
     font-weight: 900;
     text-shadow: black 4px 2px;
     color: goldenrod;
     margin: 0px;
     padding-top: 10px;
-}
-
-nav {
-
-
-
-    }
-
-nav > i {
-    padding: ;
-    font-size: ;
-
 }
 
 nav > ul {
@@ -158,7 +171,7 @@ nav > ul > li {
     font-size: 30px;
     list-style-type: none;
     display: inline;
-    padding: 0rem 10rem 0rem 10rem;
+    padding: 0rem 5rem 0rem 5rem;
 
 
 

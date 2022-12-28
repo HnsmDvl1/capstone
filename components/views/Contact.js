@@ -3,18 +3,33 @@ import html from "html-literal";
 export default () => html`
   <section id="contact">
     <form action="" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" name="name" id="name" placeholder="Full Name" required />
-
+      <h1>
+        Please input the following information inorder to recieve a response.
+      </h1>
+      <div class="nameEmail"
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="your name"
+        required
+      /><br >
       <label for="email">Email:</label>
-      <input type="email" name="email" id="email" placeholder="you@somewhere.com" />
-
-      <div>
-        <label for="msg">Enter your message:</label>
-        <textarea name="msg" id="msg" cols="60" rows="20"></textarea>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="your@email.com"
+      />
       </div>
 
-      <div>
+      <div class="msgBox">
+        <!-- <label for="msg">Enter your message:</label> -->
+        <textarea name="msg" id="msg" placeholder="Enter your message here" cols="60" rows="3"></textarea>
+      </div>
+
+      <div class="questions">
         <p>What's this message about?</p>
         <div>
           <input
