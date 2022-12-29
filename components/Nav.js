@@ -13,8 +13,6 @@ export default links => html`
           )
           .join("")}
       </ul>
-      browser.pageAction.hide(Nav.js)
-
     </nav>
   </section>
 `;

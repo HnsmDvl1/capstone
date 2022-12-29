@@ -22,6 +22,7 @@ function render(state = store.Home) {
 //     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
 //   });
 // }
+
 router.hooks({
   before: (done, params) => {
     const view =
@@ -51,6 +52,14 @@ router.hooks({
           })
           .catch(err => console.log(err));
         break;
+      case "Shop":
+        axios.get("https://fakestoreapi.com/products").then(response => {
+          console.log(response.data);
+          store.Shop.products = response.data;
+          done();
+        });
+        break;
+
       //could add a 'switch case' statement here for a 2nd route
       default:
         done();
