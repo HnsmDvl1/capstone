@@ -8,7 +8,7 @@ export default state => html`
       Modern Woman.
     </p>
     <p>
-      Buisness statement goes here.
+      Business statement goes here.
     </p>
     <p>
       blah...blah...blah....
