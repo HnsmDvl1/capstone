@@ -1,26 +1,18 @@
-// 'Import' Express modules instead of http
+// 'Import' the Express module instead of http
 const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
-
+const pizzas = require("./routers/pizzas");
 
 dotenv.config();
 
-const PORT = process.env.PORT || 4040; // we use || to provide a default value
-
-// express's value is being assigned to set 'app'lication variable
+// Initialize the Express application
+//app represents our Express Server
 const app = express();
 
-//connecting to mongo
 mongoose.connect(process.env.MONGODB);
-
-//labeling the connection as set variable db
 const db = mongoose.connection;
-
-//two event handlers to indicate connection status
-//1st-listening for 'error' events
 db.on("error", console.error.bind(console, "Connection Error:"));
-//2nd-indicates a good connection
 db.once(
   "open",
   console.log.bind(console, "Successfully opened connection to Mongo!")
@@ -31,28 +23,23 @@ const logging = (request, response, next) => {
   next();
 };
 
-//Middleware
-//express.json allows chaining of middleware
-//this has 2 middleware chained
-//'app.use(express.json())' and 'app.use(logging)'
-app.use(express.json()).use(logging);
+app.use(express.json());
+app.use(logging);
 
-// Request handler-home route
-// app
-//   .route("/status")
-//   .get((request, response) => {
-//     response.status(200).json({ message: "Service healthy" });
-//   })
-
-// Request handler-home route
+// Handle the request with HTTP GET method from http://localhost:4040/status
 app.get("/status", (request, response) => {
   response.status(200).json({ message: "Service healthy" });
 });
 
-//handler method echoes back a request w/JSON body
-app.post((request, response) => {
-  response.json({ requestBody: request.body });
+app.get("/echo/:input", (request, response) => {
+  const message = request.params.input;
+  response.status(418).json({ echo: message });
 });
 
-//part of express boilerplate-indicates listening on port# to show coding execution
+app.use("/pizzas", pizzas);
+
+const PORT = process.env.PORT || 4040; // we use || to provide a default value
+
+// Tell the Express app to start listening
+// Let the humans know I am running and listening on 4040
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
