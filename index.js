@@ -53,11 +53,13 @@ router.hooks({
           .catch(err => console.log(err));
         break;
       case "Shop":
-        axios.get("https://fakestoreapi.com/products").then(response => {
-          console.log(response.data);
-          store.Shop.products = response.data;
-          done();
-        });
+        axios
+          .get("https://fakestoreapi.com/products/category/jewelery")
+          .then(response => {
+            console.log(response.data);
+            store.Shop.products = response.data;
+            done();
+          });
         break;
 
       //could add a 'switch case' statement here for a 2nd route

@@ -6,9 +6,9 @@ export default state => html`
       .map(
         product => html`
           <div class="product">
-            <img src="${product.image}" />
+            <img src="${product.image}" height="400px" width="550px" />
             <h3>${product.title}</h3>
-            <p>${product.price}</p>
+            <p>$${product.price}</p>
             <p>${product.description}</p>
           </div>
         `
