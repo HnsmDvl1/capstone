@@ -4,7 +4,7 @@ export default state => html`
   <section id="jumbotron">
     <h1>Hidden Treasures</h1>
     <h2>by Debora Sue</h2>
-    <a href="shop">ENTER SHOP</a>
+    <a href="shop" type="button">ENTER SHOP</a>
   </section>
 
   <h3>
