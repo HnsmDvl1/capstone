@@ -1,6 +1,6 @@
 import html from "html-literal";
 
-export default state => html`
+export default () => html`
   <section id="about">
     <h1>Debora Sue shares her designer collection at:</h1>
     <h2>Hidden Treasures</h2>

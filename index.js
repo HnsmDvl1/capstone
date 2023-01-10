@@ -61,8 +61,29 @@ router.hooks({
             done();
           });
         break;
+      // case "Footer":
+      //   axios
+      //     .get(
+      //       `https://api.openweathermap.org/data/2.5/weather?q=st%20louis&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
+      //     )
+      //     .then(response => {
+      //       const kelvinToFahrenheit = kelvinTemp =>
+      //         Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
 
-      //could add a 'switch case' statement here for a 2nd route
+      //       store.Footer.weather = {};
+      //       store.Footer.weather.city = response.data.name;
+      //       store.Footer.weather.temp = kelvinToFahrenheit(
+      //         response.data.main.temp
+      //       );
+      //       store.Footer.weather.feelsLike = kelvinToFahrenheit(
+      //         response.data.main.feels_like
+      //       );
+      //       store.Footer.weather.description = response.data.weather[0].main;
+      //       done();
+      //     })
+      //     .catch(err => console.log(err));
+      //   break;
+      // //could add a 'switch case' statement here for a 2nd route
       default:
         done();
     }

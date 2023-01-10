@@ -14,7 +14,7 @@ export default () => html`
           id="name"
           placeholder="your name"
           required
-        /><br />
+        />
         <label for="email">Email:</label>
         <input
           type="email"
@@ -25,40 +25,40 @@ export default () => html`
       </div>
 
       <div class="msgBox">
-        <!-- <label for="msg">Enter your message</label> -->
         <textarea
           name="msg"
           id="msg"
-          placeholder="Enter your message here"
-          cols="60"
+          cols="80"
           rows="3"
+          placeholder="Enter your message here"
         >
-        </textarea>
+        Enter your message here</textarea
+        >
       </div>
 
       <div class="questions">
         <p>What's this message about?</p>
-        <div class="q">
-          <input
-            type="radio"
-            name="subject"
-            value="professional"
-            id="pro"
-            checked
-          />
-          <label for="pro">I'd like to hire you!</label>
-        </div>
-        <div class="q">
-          <input type="radio" name="subject" value="personal" id="personal" />
-          <label for="personal">Personal message</label>
-        </div>
-        <div class="q">
-          <input type="radio" name="subject" value="other" />
-          <label>Don't know/something else</label>
-        </div>
+      </div>
+      <div class="q">
+        <input
+          type="radio"
+          name="subject"
+          value="professional"
+          id="pro"
+          checked
+        />
+        <label for="pro">I'd like to hire you!</label>
+      </div>
+      <div class="q">
+        <input type="radio" name="subject" value="personal" id="personal" />
+        <label for="personal">Personal message</label>
+      </div>
+      <div class="q">
+        <input type="radio" name="subject" value="other" />
+        <label>Don't know/something else</label>
       </div>
 
-      <div>
+      <div class="refereed">
         <label for="marketing">How did you hear about me?</label>
         <select name="marketing" id="marketing">
           <optgroup label="Online">
